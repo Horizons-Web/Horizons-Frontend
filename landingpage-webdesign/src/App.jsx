@@ -1,9 +1,9 @@
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import  Hero  from "./components/Hero";
-import Mission from "./components/Mission";
-import Problems  from "./components/Problems";
+import Hero  from "./components/Hero";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
+import Product  from "./components/Product";
 
 function App() {
 
@@ -11,8 +11,8 @@ function App() {
     <div>
       <Header />
       <Hero />
-      <Mission />
-      <Problems />
+      <AboutUs />
+      <Product />
       <Contact />
       <Footer />
     </div>

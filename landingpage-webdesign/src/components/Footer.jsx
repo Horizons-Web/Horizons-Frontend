@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-footer p-8 xl:p-20 bg-red-400">
+    <footer className="bg-footer p-8 xl:p-20 bg-black">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-gray-500 pb-8">
         {/* Logo */}
         <div className="w-1/6">
