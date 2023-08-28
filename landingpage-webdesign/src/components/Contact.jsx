@@ -18,7 +18,7 @@ export const Contact = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form id="contact" ref={form} onSubmit={sendEmail}>
         <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem] text-center">Contacto</h1>
 
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-4 gap-8 p-8'>

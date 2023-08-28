@@ -3,7 +3,7 @@ import React from 'react';
 export const AboutUs = () => {
   return (
     
-    <section id="about us" className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">
+    <section id="aboutUs" className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">
 
     {/* Information */}
     <div className="md:col-span-5 flex items-center justify-center p-8 xl:p-16">

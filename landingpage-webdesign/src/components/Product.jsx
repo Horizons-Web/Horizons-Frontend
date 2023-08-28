@@ -2,7 +2,7 @@ import React from 'react';
 
 const Product = () => {
   return (
-    <div className='w-full py-[10rem] px-4 '>
+    <div id="product" className='w-full py-[10rem] px-4 '>
 
     <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem] text-center -mt-40">Caracteristicas</h1>
 

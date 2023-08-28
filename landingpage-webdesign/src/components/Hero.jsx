@@ -17,9 +17,7 @@ const Hero = () => {
             className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] object-cover xl:-mt-28"
           />
         </div>
-
-        {/* Circle */}
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-white border-[10px] border-primary rounded-full -z-10"></div>
+        
       </div>
 
        {/* Information */}
