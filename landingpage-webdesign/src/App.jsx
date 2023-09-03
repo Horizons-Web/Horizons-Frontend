@@ -1,20 +1,20 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero  from "./components/Hero";
-import AboutUs from "./components/AboutUs";
+import Guide from "./components/Guide";
 import Contact from "./components/Contact";
 import Product  from "./components/Product";
 
 function App() {
 
   return (
-    <div>
+    <div className="bg-background">
       <Header />
       <Hero />
-      <AboutUs />
-      <Product />
-      <Contact />
-      <Footer />
+      <Product/>
+      <Guide/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

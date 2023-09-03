@@ -1,55 +1,147 @@
 import React from 'react';
 
+import { GiWorld } from "react-icons/gi";
+import { BsFillInfoCircleFill } from "react-icons/bs";
+import { AiOutlineStar, AiTwotoneCalendar, AiOutlineFullscreenExit, AiOutlineSearch} from "react-icons/ai";
+import { MdPayment } from "react-icons/md";
+import { HiOutlineInformationCircle } from "react-icons/hi"
+
+
+
 const Product = () => {
   return (
-    <div id="product" className='w-full py-[10rem] px-4 '>
 
-    <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem] text-center -mt-40">Caracteristicas</h1>
+    <div id="product" className="bg-backgroundSecondary  " >
 
-      <div className='max-w-[1240px] mx-auto grid md:grid-cols-4 gap-8 p-8'>
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-              <img className='w-50 mx-auto mt-[-3rem] bg-white' src="option.gif" alt="/" />
-              <h2 className='text-2xl font-bold text-center '>Adventure blend</h2>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>
-                  Algoritmo que busca y filtra actividades segun intereses, niveles de habilidad y ubicacion de los aventureros.
-                  </p>
-              </div>
-          </div>
+        <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-bold font-primary text-center pt-10 ">
+            De la necesidad a la creación de soluciones
+        </h1>
 
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-          <img className='w-50 mx-auto mt-[-3rem] bg-white' src="web.gif" alt="/" />
-              <h2 className='text-2xl font-bold text-center '>Book ease</h2>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>
-                  Una plataforma para que guias y/o agencias puedan gestionar sus reservas de manera
-                  eficiente.
-                  </p>
-              </div>
-          </div>
+        <div>
 
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-          <img className='w-50 mx-auto mt-[-3rem] bg-white' src="admin.gif" alt="/" />
-              <h2 className='text-2xl font-bold text-center '>Post mananger</h2>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>
-                    Conjunto de herramientas para que publicar, cancelar, renovar y promocionar
-                    actividades sea sencillo.
-                  </p>
-              </div>
-          </div>
+            <p className="text-md xl:text-2xl font-primary  p-8 pt-5  text-center">
+                En el mundo del turismo de aventura, encontrar y reservar excursiones es{' '}
+                <span className="text-primary font-semibold">complicado</span>
+                {' '}. Los aventureros tienen que buscar en {' '}
+                <span className="text-primary font-semibold">múltiples sitios</span>
+                {' '}web y redes sociales para encontrar una actividad que les guste, y luego {' '}
+                <span className="text-primary font-semibold">esperar</span> 
+                {' '}a que un guía o agencia confirme la disponibilidad, por otra parte el proceso de pago a menudo es {' '}
+                <span className="text-primary font-semibold">limitado y poco seguro</span> .
+            </p>
 
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-          <img className='w-50 mx-auto mt-[-3rem] bg-white' src="chat.gif" alt="/" />
-              <h2 className='text-2xl font-bold text-center '>Horizons connect</h2>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>
-                  Un sistema de chat propio para conectar aventureros y guias, que mejorara la comunicacion entre ambas partes.
-                  </p>
-              </div>
-          </div>
-      </div>
+            <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-semibold font-primary text-center pt-10 pb-10">
+                Nuestra propuesta 
+            </h1>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 font-primary mx-10  pb-20 ">
+
+                <div className="md:col-span-1 mb-16">
+                    
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow mx-5 m-5">
+                        <div className='flex items-center space-x-2 '>
+                            <AiOutlineSearch size={25} />
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Variedad
+                            </p>
+                        </div>
+
+                        <div className='text-gray-800'>
+                            Tendras una amplia gama de actividades y proveedores, elegi
+                            la que mejor se ajuste a tu estilo.
+                        </div>
+                    </div>
+
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow mx-5 m-5">
+                        <div className='flex items-center space-x-2 '>
+                            <HiOutlineInformationCircle size={20} />
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Informacion
+                            </p>
+                        </div>
+                        <div className='text-gray-800'>
+                            Sin sorpresas. Dispondrás de toda la información que necitas saber para contratar tu excursión.
+                        </div>
+                    </div>
+
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow m-5 ">
+                        <div className='flex items-center space-x-2 '>
+                            <AiTwotoneCalendar size={20} />
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Reservas sencillas
+                            </p>
+                        </div>
+                        <div className='text-gray-800'>
+                            Nuestra plataforma fácil de usar te permite encontrar y reservar tu excursión ideal en cuestión de minutos.                        </div>
+                    </div>
+
+                </div>
+
+                <div className="md:col-span-1 mb-16">
+
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow mx-5 m-5">
+                        <div className='flex items-center space-x-2 '>
+                            <AiOutlineFullscreenExit size={20} />
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Centralizacion
+                            </p>
+                        </div>
+                        <div className='text-gray-800'>
+                            Todas las actividades y procesos en un solo lugar. No pierdas el tiempo navegando
+                            por multiples sitios, encuentra todo aqui.                        
+                        </div>
+                    </div>
+
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow m-5">
+                        <div className='flex items-center space-x-2  px-1'>
+                            <AiOutlineStar size={20} />
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Opiniones y calificaciones
+                            </p>
+                        </div>
+                        <div className='text-gray-800'>
+                            Podras opinar y ver las calificaciones de los guias y agencias para 
+                            elegir el mejor!
+                        </div>
+                    </div>
+                    
+                    <div className="h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow m-5 md:hidden pb-20">
+                        <div className='flex items-center space-x-2 px-1'>
+                            <MdPayment size={20}/>
+                            <p className='text-xl xl:text-2xl font-bold '>
+                                Pago seguro
+                            </p>
+                        </div>
+                        <div className='text-gray-800'>
+                        Ofrecemos múltiples opciones de pago. Además, utilizamos tecnología de última generación para proteger tus datos financieros y que puedas contratar con tranquilidad.                        </div>
+                    </div>
+
+                    <div className="xl:block hidden h-1/3 grid grid-rows-2 grid-cols-1 px-5 border shadow m-5">
+                        <div className='flex items-center space-x-2  px-1'>
+                            <MdPayment size={20} className='mt-3'/>
+                            <p className='text-xl xl:text-2xl font-bold mt-3'>
+                                Pago seguro
+                            </p>
+                        </div>
+                        <div className='mt-3 text-gray-800'>
+                            Ofrecemos múltiples opciones de pago. Además, utilizamos tecnología de última generación para proteger tus datos financieros y que puedas contratar con tranquilidad.                        </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div className="w-full block md:hidden">
+            <img src="mountain.png" alt="Imagen de montaña" />
+        </div>
+
+        <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-bold font-primary text-center pt-10 bg-background pt-10">
+            Los proveedores son parte de nuestro sistema
+        </h1>
+
     </div>
+
   );
 };
 

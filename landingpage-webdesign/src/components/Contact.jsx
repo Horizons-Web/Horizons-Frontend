@@ -8,39 +8,52 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+  
+    const emailInput = form.current.querySelector('input[name="user_email"]');
+  
+    if (emailInput.checkValidity() && emailInput.value.trim() !== '') {
 
-    emailjs.sendForm('service_rvmpy5s', 'template_yji9vvn', form.current, 'lLJQded06VinCsMQ4')
-      .then((result) => {
+      emailjs
+        .sendForm('service_rvmpy5s', 'template_yji9vvn', form.current, 'lLJQded06VinCsMQ4')
+        .then((result) => {
           console.log(result.text);
-      }, (error) => {
+        })
+        .catch((error) => {
           console.log(error.text);
-      });
+        });
+    } else {
+      
+      console.log('Correo electrónico no válido o vacío');
+    }
   };
 
   return (
-    <form id="contact" ref={form} onSubmit={sendEmail}>
-        <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem] text-center">Contacto</h1>
+
+    <form id="contact" ref={form} onSubmit={sendEmail} className='bg-background border font-primary py-28'>
+        <h1 className="text-3xl xl:text-5xl font-bold xl:leading-[7.5rem] text-center">Contacto</h1>
 
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-4 gap-8 p-8'>
             <input  type="text" 
                     name="user_name"
-                    className="w-full bg-gray-100 py-4 pl-10 pr-36 rounded-xl outline-none"
+                    required
+                    className="w-full bg-backgroundSecondary py-4 pl-10 pr-36 rounded-xl outline-none"
                     placeholder="Nombre" />
 
             <input  type="email" 
                     name="user_email" 
-                    className="w-full bg-gray-100 py-4 pl-10 pr-36 rounded-xl outline-none"
+                    required
+                    className="w-full bg-backgroundSecondary py-4 pl-10 pr-36 rounded-xl outline-none"
                     placeholder="Email" />
 
             <textarea   name="message"
-                        className="w-full bg-gray-100 py-4 pl-10 pr-36 rounded-xl outline-none"
+                        className="w-full bg-backgroundSecondary py-4 pl-10 pr-36 rounded-xl outline-none"
                         placeholder="Mensaje" />
 
-            <input  type="submit" 
-                    value="Enviar"
-                    className=" bg-gray-100 rounded-xl hover:bg-primary transition-colors" />
-
+            <button type="submit" className="text-lg font-semibold py-2 px-6 bg-primary text-white rounded-xl mb-2.5 hover:scale-105 transition-transform">
+                    Hablemos!
+            </button>
         </div>
+        
     </form>
   );
 };

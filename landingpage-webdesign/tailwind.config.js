@@ -7,9 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary : "#FF1C39",
+        primary : "#4ABC69",
+        background : "#f5f5f5",
+        backgroundSecondary : "#f0f0f0",
       }
     },
+    fontFamily: {
+      "primary" : ["Montserrat Alternates","sans-serif"],
+    }
   },
   plugins: [],
 }

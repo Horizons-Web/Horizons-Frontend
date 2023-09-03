@@ -1,46 +1,47 @@
-import React, { useState } from "react";
-// Icons
-import {
-  RiCheckboxBlankCircleFill,
-  RiMenu3Fill,
-  RiCloseLine,
-} from "react-icons/ri";
+import React, { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
-    <header id="header" className="flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
-      <div className="xl:w-1/6 text-center -mt-4">
-        <a href="#" className="text-4xl font-bold relative p-1 ">
-          Horizons<span className="text-primary text-5xl">.</span>{" "}
-          <RiCheckboxBlankCircleFill className="absolute -left-3 -bottom-3 text-primary -z-10" />
-        </a>
+    
+    <div className='flex justify-between items-center h-24 max-w-[1980px] mx-auto px-10 text-black border-b sticky top-0 z-50 bg-backgroundSecondary shadow-xl'>
+      <a href="#home">
+        <img src="logo.svg" className="w-36 h-auto  lg:w-48 lg:h-auto" />
+      </a>
+      <ul className='hidden md:flex mr-1'>
+        <a href="#home" className='p-4 hover:text-primary transition-colors font-primary'>Inicio</a>
+        <a href="#product" className='p-4 hover:text-primary transition-colors font-primary '>Características</a>
+        <a href="#guide" className='p-4 hover:text-primary transition-colors font-primary '>Guias / agencias</a>
+        <a href="#contact" className='p-4 ml-2 text-white font-primary rounded-xl border bg-primary hover:scale-105 transition-transform"'>Contacto</a>
+      </ul>
+      <div onClick={handleNav} className='block md:hidden'>
+          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
       </div>
-      <nav
-        className={`fixed  w-[80%] md:w-[40%] xl:w-full h-full bg-white  ${
-          showMenu ? "left-0" : "-left-full "
-        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 `}
-      >
-        <a href="#header" className="text-1xl hover:text-primary transition-colors ">
-          Home
-        </a>
-        <a href="#aboutUs" className="text-1xl hover:text-primary transition-colors ">
-          Nosotros
-        </a>
-        <a href="#product" className="text-1xl hover:text-primary transition-colors">
-          Producto
-        </a>
-        <a href="#contact" className="text-1xl hover:text-primary transition-colors ">
-          Contacto
-        </a>
-      </nav>
-      <button
-        onClick={() => setShowMenu(!showMenu)}
-        className="xl:hidden text-2xl p-2 "
-      >
-        {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
-      </button>
-    </header>
+      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-background opacity-100 ease-in-out duration-500' : 'opacity-0 ease-in-out duration-500 fixed left-[-100%] top-0 h-full border-r border-r-gray-900 bg-background'}>
+          <a href="#home">
+            <img src="logo.svg" className="w-40 h-auto ml-8" />
+          </a>
+          <li className='p-4 border-b border-gray-600 '>
+            <a onClick={handleNav} href="#home" className='font-primary' >Inicio</a>
+          </li>
+          <li className='p-4 border-b border-gray-600'>
+            <a onClick={handleNav} href="#product" className='font-primary' >Características</a>
+          </li>
+          <li className='p-4 border-b border-gray-600'>
+            <a onClick={handleNav} href="#guide" className='font-primary' >Guias / agencias</a>
+          </li>
+          <li className='p-4'>
+            <a onClick={handleNav} href="#contact" className='font-primary' >Contacto</a>
+          </li>
+      </ul>
+    </div>
   );
 };
 

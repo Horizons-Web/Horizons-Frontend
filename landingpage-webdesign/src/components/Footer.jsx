@@ -1,26 +1,22 @@
 import React from "react";
-// Icons
+
 import {
   RiCheckboxBlankCircleFill,
   RiInstagramLine,
   RiFacebookLine,
-  RiTwitterLine,
+  RiLinkedinFill,
   RiGithubLine,
 } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer p-8 xl:p-20 bg-black">
+    <footer className="bg-footer p-8 xl:p-20 bg-gray-200 font-primary">
+      
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-gray-500 pb-8">
-        {/* Logo */}
-        <div className="w-1/6">
-          <a
-            href="#"
-            className="text-2xl font-bold relative p-1 bg-footer text-white"
-          >
-            Horizons<span className="text-primary text-5xl">.</span>{" "}
-          </a>
-        </div>
+        
+      <a href="#home">
+        <img src="logo.svg" className="w-36 h-auto  lg:w-48 lg:h-auto" />
+      </a>
         {/* Social media */}
         <nav className="flex items-center gap-4">
           <a href="#" className="block text-white p-4 bg-primary rounded-full">
@@ -31,11 +27,11 @@ const Footer = () => {
             {" "}
             <RiFacebookLine />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="https://www.linkedin.com/company/trippi-ar/" className="block text-white p-4 bg-primary rounded-full">
             {" "}
-            <RiTwitterLine />{" "}
+            <RiLinkedinFill />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="https://github.com/Trippi-ar" className="block text-white p-4 bg-primary rounded-full">
             {" "}
             <RiGithubLine />{" "}
           </a>
@@ -45,32 +41,32 @@ const Footer = () => {
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <a
             href="#"
-            className="text-gray-300 mt-4 hover:text-primary transition-colors"
+            className="text-black mt-4 hover:text-primary transition-colors"
           >
             Nosotros
           </a>
     
           <a
             href="#"
-            className="text-gray-300 mt-4 hover:text-primary transition-color"
+            className="text-black mt-4 hover:text-primary transition-color"
           >
             Inversores
           </a>
           <a
             href="#"
-            className="text-gray-300 mt-4 hover:text-primary transition-color"
+            className="text-black mt-4 hover:text-primary transition-color"
           >
             Eventos
           </a>
           <a
             href="#"
-            className="text-gray-300 mt-4 hover:text-primary transition-color"
+            className="text-black mt-4 hover:text-primary transition-color"
           >
             Terminos de uso
           </a>
           <a
             href="#"
-            className="text-gray-300 mt-4 hover:text-primary transition-color"
+            className="text-black mt-4 hover:text-primary transition-color"
           >
             Politicas de privacidad
           </a>
@@ -83,8 +79,8 @@ const Footer = () => {
         </nav>
       </div>
       <div className="mt-20">
-        <p className="text-gray-300 text-center">
-          © Horizons 2023 - All Rights Reserved
+        <p className="text-black text-center">
+          © Trippi 2023 - All Rights Reserved
         </p>
       </div>
     </footer>
