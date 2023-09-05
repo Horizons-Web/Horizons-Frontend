@@ -3,7 +3,7 @@ import React from 'react';
 export const Guide = () => {
   return (
 
-    <section id='guide' className="flex flex-wrap pt-16">
+    <section id='guide' className="flex flex-wrap pt-16 text-footer">
     
       <div className="w-full md:w-2/3 md:col-span-5 flex items-center justify-center p-8 xl:p-16">
         <div className="max-w-[1366px]">

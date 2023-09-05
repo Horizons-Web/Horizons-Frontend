@@ -43,7 +43,7 @@ const Hero = () => {
 
         <div className="max-w-[1366px]">
 
-          <h1 className="text-2xl xl:text-6xl font-bold  font-primary ">
+          <h1 className="text-2xl xl:text-6xl font-bold  font-primary text-footer ">
               Descubri tu próxima aventura con <br></br>{" "}
               <Typed className = "text-primary font-semibold font-primary  border-primary inline-block  pt-1 pb-5"
                 strings={['un click.','informacion detallada.','variedad ilimitada.',]} 

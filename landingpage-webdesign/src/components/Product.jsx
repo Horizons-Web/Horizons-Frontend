@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { GiWorld } from "react-icons/gi";
-import { BsFillInfoCircleFill } from "react-icons/bs";
 import { AiOutlineStar, AiTwotoneCalendar, AiOutlineFullscreenExit, AiOutlineSearch} from "react-icons/ai";
 import { MdPayment } from "react-icons/md";
 import { HiOutlineInformationCircle } from "react-icons/hi"
@@ -11,7 +9,7 @@ import { HiOutlineInformationCircle } from "react-icons/hi"
 const Product = () => {
   return (
 
-    <div id="product" className="bg-backgroundSecondary  " >
+    <div id="product" className="bg-backgroundSecondary text-footer " >
 
         <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-bold font-primary text-center pt-10 ">
             De la necesidad a la creación de soluciones
@@ -20,7 +18,7 @@ const Product = () => {
         <div>
 
             <p className="text-md xl:text-2xl font-primary  p-8 pt-5  text-center">
-                En el mundo del turismo de aventura, encontrar y reservar excursiones es{' '}
+                En el mundo del turismo aventura, encontrar y reservar excursiones es{' '}
                 <span className="text-primary font-semibold">complicado</span>
                 {' '}. Los aventureros tienen que buscar en {' '}
                 <span className="text-primary font-semibold">múltiples sitios</span>
