@@ -18,7 +18,7 @@ const Header = () => {
       <ul className='hidden md:flex mr-1'>
         <a href="#home" className='p-4 hover:text-primary transition-colors font-primary'>Inicio</a>
         <a href="#product" className='p-4 hover:text-primary transition-colors font-primary '>Características</a>
-        <a href="#guide" className='p-4 hover:text-primary transition-colors font-primary '>Guias / agencias</a>
+        <a href="#guide" className='p-4 hover:text-primary transition-colors font-primary '>Guias </a>
         <a href="#contact" className='p-4 ml-2 text-whiteCustom font-primary rounded-xl border bg-primary hover:scale-105 transition-transform"'>Contacto</a>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
@@ -35,7 +35,7 @@ const Header = () => {
             <a onClick={handleNav} href="#product" className='font-primary' >Características</a>
           </li>
           <li className='p-4 border-b border-gray-600'>
-            <a onClick={handleNav} href="#guide" className='font-primary' >Guias / agencias</a>
+            <a onClick={handleNav} href="#guide" className='font-primary' >Guias </a>
           </li>
           <li className='p-4'>
             <a onClick={handleNav} href="#contact" className='font-primary' >Contacto</a>

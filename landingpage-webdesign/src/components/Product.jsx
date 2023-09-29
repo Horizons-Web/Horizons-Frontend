@@ -11,7 +11,7 @@ const Product = () => {
 
     <div id="product" className="bg-backgroundSecondary text-footer " >
 
-        <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-bold font-primary text-center pt-10 ">
+        <h1 className="text-xl md:text-xl lg:text-4xl xl:text-4xl font-bold font-primary text-center pt-10 pl-5 pr-5">
             De la necesidad a la creación de soluciones
         </h1>
 
@@ -24,7 +24,7 @@ const Product = () => {
                 <span className="text-primary font-semibold">múltiples sitios</span>
                 {' '}web y redes sociales para encontrar una actividad que les guste, y luego {' '}
                 <span className="text-primary font-semibold">esperar</span> 
-                {' '}a que un guía o agencia confirme la disponibilidad, por otra parte el proceso de pago a menudo es {' '}
+                {' '}a que un guía confirme la disponibilidad, por otra parte el proceso de pago a menudo es {' '}
                 <span className="text-primary font-semibold">limitado y poco seguro</span> .
             </p>
 
@@ -98,7 +98,7 @@ const Product = () => {
                             </p>
                         </div>
                         <div className='text-gray-800'>
-                            Podras opinar y ver las calificaciones de los guias y agencias para 
+                            Podras opinar y ver las calificaciones de los guias para 
                             elegir el mejor!
                         </div>
                     </div>

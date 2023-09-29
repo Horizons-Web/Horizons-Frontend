@@ -55,7 +55,7 @@ const Hero = () => {
 
           <p className="text-md xl:text-2xl text-gray-500 font-primary  pb-5">
             Trippi es una plataforma e-commerce que tiene como meta proporcionar una amplia y detallada gama de experiencias de aventura, 
-            simplificando la gestión de actividades y reservas para guías y agencias turisticos.
+            simplificando la gestión de actividades y reservas para guías turisticos.
           </p>
 
           <div className="flex flex-col md:flex-row items-center  font-primary ">

@@ -35,7 +35,7 @@ export const Guide = () => {
             Sistema de reservas
           </h1>
           <p className="text-md xl:text-2xl text-gray-500 font-primary  pt-5">
-            En cuanto al sistema de reservas, hemos creado una herramienta diseñada específicamente para guías y agencias como tú. Con ella, podrás ver tus reservas de manera clara y cobrar por tus actividades de manera {' '}
+            En cuanto al sistema de reservas, hemos creado una herramienta diseñada específicamente para guías como tú. Con ella, podrás ver tus reservas de manera clara y cobrar por tus actividades de manera {' '}
             <span className="text-primary font-semibold">sencilla y conveniente</span>{' '}. Además, recibirás notificaciones instantáneas cada vez que se realice una reserva. También estamos implementando un mecanismo eficiente para gestionar las cancelaciones, brindándote un {' '}
             <span className="text-primary font-semibold">control total</span> {' '} sobre tu agenda y tus ingresos.          
           </p>
