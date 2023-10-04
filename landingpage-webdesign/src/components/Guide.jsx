@@ -76,7 +76,7 @@ export const Guide = () => {
             Promociones Personalizadas
           </h1>
           <p className="text-md xl:text-2xl text-gray-500 font-primary  pt-5">
-            Nuestro sistema de fideicomiso, es una herramienta que permite a los guías fomentar la fidelidad de sus clientes y {' '}
+            Nuestro sistema de fidelizacion, es una herramienta que permite a los guías fomentar la fidelidad de sus clientes y {' '}
             <span className="text-primary font-semibold">aumentar sus ingresos</span>. A través de esta función, los guías pueden ofrecer promociones y ofertas especiales a sus clientes más leales, {' '}
             <span className="text-primary font-semibold">fortaleciendo las conexiones</span> {' '} y generando oportunidades de negocio adicionales. Es una forma efectiva de unir aún más a guías y aventureros, al tiempo que impulsan sus ganancias.
           </p>
